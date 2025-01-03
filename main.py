@@ -166,7 +166,7 @@ async def download_book(client, status, message: Message, user_task: dict):
         if no_of_pages == 0:
             raise Exception("Invalid number of pages.")
         await status.delete()
-        stage = await app.send_message(user_id, f"__**Downloading:**__\n\n📕 **Book Name:** {book_name}\n🔖 **Total Pages:** {no_of_pages}\n\n> __**Powered by Team SPY*__")
+        stage = await app.send_message(user_id, f"__**Downloading:**__\n\n📕 **Book Name:** {book_name}\n🔖 **Total Pages:** {no_of_pages}\n\n> __**Powered by YCT Official*__")
 
         # Proceed with image generation and PDF creation
         image_files = []
